@@ -1,3 +1,5 @@
+
+
 public class IntPoint2D implements IIntPoint2D {
 
   int x;
