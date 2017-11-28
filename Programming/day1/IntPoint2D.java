@@ -1,4 +1,7 @@
-
+/*
+Emma Blair 11/27/17
+CP222
+*/
 
 public class IntPoint2D implements IIntPoint2D {
 
