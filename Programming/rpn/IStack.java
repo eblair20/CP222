@@ -7,7 +7,7 @@ public interface IStack<T> {
      * @param v the value to push
      */
     public void push(T v) throws OverFlowException;
-    
+
     /**
      * Pops the top value from the stack
      * @return the value
