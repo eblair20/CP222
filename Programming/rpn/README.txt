@@ -17,7 +17,7 @@ Answer is: 11.0
 
 
 Files:
-RPN.java           - RPN calculator main
+RPN.java           - RPN calculator main *This file has been updated to run the Stack and Queue files instead of the RingQueue  and ListStack files. The change is one lines 13 and 13 in the file*
 RPNCore.java       - The core logic for an RPN calculator
 RPNToken.java      - Interface for things the calculator can process
 RPNValueToken.java - Representation for a value
@@ -28,7 +28,6 @@ OverFlowException.java      - Exception for over filling a data structure
 UnderFlowException.java     - Exception for over emptying a data structure
 BadExpressionException.java - Exception for leftover tokens in the calculator
 UnknownOpException.java     - Exception for using an unknown operator
-RingQueue.class      - A compiled ring queue
-LinkStack.class      - A compiled link based stack
-LinkStack$Link.class - A compiled link implementation for the stack
+Queue.java         - Queue version for the RPN calculator that implements IQueue.java
+Stack.java         - Stack version for the RPN calculator that implements IStack.java
 
