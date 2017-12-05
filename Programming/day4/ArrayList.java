@@ -1,3 +1,5 @@
+// passes tests A B C D E G H ... others were almost working
+
 import java.util.Scanner;
 
 public class ArrayList<T> implements IList<T> {
