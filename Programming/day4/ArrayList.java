@@ -1,4 +1,4 @@
-// passes tests A B C D E G H 
+//passes tests A B C D E G H 
 
 import java.util.Scanner;
 
