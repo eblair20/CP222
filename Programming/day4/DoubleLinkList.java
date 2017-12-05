@@ -1,3 +1,5 @@
+// passes tests A B C D ... others were almost working
+
 public class DoubleLinkList<T> implements IList<T> {
   IDLink<T> head;
   IDLink<T> tail;
