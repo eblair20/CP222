@@ -61,11 +61,11 @@ public class Test {
         System.out.println("E");
 
         // Use the move call to mutate the list
-        // Use forward moves to put the first element near the end
+        //Use forward moves to put the first element near the end
         for(int i=0; i+2<n; i+=2) {
             list.move(i, i+2);
         }
-        // Use backward moves to put the last element near the start
+        //Use backward moves to put the last element near the start
         if(n%2==0) { s=n-1; } else { s=n-2; }
         for(int i=s; i-2>0; i-=2) {
             list.move(i, i-2);
@@ -76,7 +76,7 @@ public class Test {
         for(int i=2; i<n-2; i++) {
             if(list.fetch(i) != i) { test_failed=true; }
         }
-        // Check the size and order
+        //Check the size and order
         if(test_failed) {
             debugPrint(list);
             throw new TestFailedException("Incorrect content after moves");
@@ -99,12 +99,12 @@ public class Test {
         System.out.println("G");
 
         // remove half the elements with index calls
-        for(int i=1; i<n/2; i++) {
+        for(int i=0; i<n/2; i++) {
             list.remove(i);
         }
         if(list.fetch(0)!=1) { test_failed=true; }
         for(int i=1; i<n/2-1; i++) {
-            if(list.fetch(i) != i*2)  { test_failed=true; }
+            if(list.fetch(i) != i*2 + 1 )  { test_failed=true; }
         }
         // Check the size and order
         if(test_failed) {
