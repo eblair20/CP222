@@ -1,4 +1,4 @@
-// passes tests A B C D ... others were almost working
+// passes tests A B C D 
 
 public class SingleLinkList <T> implements IList<T> {
 
@@ -37,12 +37,12 @@ public class SingleLinkList <T> implements IList<T> {
     size++;
   }
 
-	/**
-	 * Adds an item to the end of list. Called 'Add' in class, but more usually called
-	 * append in other libraries. Moves <i>current</i> to the end of the list.
-	 * @param v Item to add
-	 */
-	public void append(T v) {
+/**
+ * Adds an item to the end of list. Called 'Add' in class, but more usually called
+ * append in other libraries. Moves <i>current</i> to the end of the list.
+ * @param v Item to add
+ */
+  public void append(T v) {
     ISLink<T> p = new SLink<T>(v);
     if (isEmpty()) {
       head = tail = p;
@@ -54,20 +54,20 @@ public class SingleLinkList <T> implements IList<T> {
     curr = tail;
   }
 
-  	/**
-	 * Removes the item at the <i>current</i> index in the list. <i>Current</i> becomes
-	 * the previous item in the list, if such element exists.
-	 */
-	public void remove() {
+/**
+ * Removes the item at the <i>current</i> index in the list. <i>Current</i> becomes
+ * the previous item in the list, if such element exists.
+ */
+  public void remove() {
     curr.setNext(curr.getNext().getNext());
     size--;
   }
 
-	/**
-	 * Removes the item at a specific index
-	 * @param idx index of item to remove
-	 */
-	public void remove(int idx) {
+/**
+ * Removes the item at a specific index
+ * @param idx index of item to remove
+ */
+  public void remove(int idx) {
     if (idx == 0){
       head = head.getNext();
     }
@@ -78,11 +78,11 @@ public class SingleLinkList <T> implements IList<T> {
     this.remove();
   }
 
-  /**
-	 * Changes the location of an existing element in the list
-	 * @param sidx - The initial index for the element to move
-	 * @param didx - The final index for the element to move
-	 */
+/**
+ * Changes the location of an existing element in the list
+ * @param sidx - The initial index for the element to move
+ * @param didx - The final index for the element to move
+ */
   public void move(int sidx, int didx) {
     ISLink<T> fetchlink = head;
     for (int i = 0; i <= sidx; i++) {
@@ -100,20 +100,20 @@ public class SingleLinkList <T> implements IList<T> {
   }
 
 
-	/**
-	 * Fetches the value at the <i>current</i> index in the list.
-	 * @return the requested item
-	 */
-	public T fetch() {
+/**
+ * Fetches the value at the <i>current</i> index in the list.
+ * @return the requested item
+ */
+  public T fetch() {
     return curr.getValue();
   }
 
-	/**
-	 * Fetches the value at a specific index in the list.
-	 * @param idx index of the item to return
-	 * @return the requested item
-	 */
-	public T fetch(int idx) {
+/**
+ * Fetches the value at a specific index in the list.
+ * @param idx index of the item to return
+ * @return the requested item
+ */
+  public T fetch(int idx) {
     ISLink<T> fetchlink = head;
     for(int i = 0; i < idx; i++) {
       fetchlink = fetchlink.getNext();
@@ -121,10 +121,10 @@ public class SingleLinkList <T> implements IList<T> {
     return fetchlink.getValue();
   }
 
-	/**
-	 * Advances the <i>current</i> index to the next index, if possible.
-	 */
-	public void next() {
+/**
+ * Advances the <i>current</i> index to the next index, if possible.
+ */
+  public void next() {
     if (curr == tail) {
       curr = tail;
     } else {
@@ -132,10 +132,10 @@ public class SingleLinkList <T> implements IList<T> {
     }
   }
 
-	/**
-	 * Advances the <i>current</i> index to the previous index, if possible.
-	 */
-	public void prev() {
+/**
+ * Advances the <i>current</i> index to the previous index, if possible.
+ */
+  public void prev() {
     ISLink<T> get_prev = head;
     if (get_prev.getNext() == curr) {
       curr = get_prev;
@@ -146,24 +146,24 @@ public class SingleLinkList <T> implements IList<T> {
     curr = get_prev;
   }
 
-	/**
-	 * Advances the <i>current</i> to the tail element
-	 */
-	public void jumpToTail() {
+/**
+ * Advances the <i>current</i> to the tail element
+ */
+  public void jumpToTail() {
     curr = tail;
   }
 
-	/**
-	 * Advances the <i>current</i> to the head element
-	 */
-	public void jumpToHead() {
+/**
+ * Advances the <i>current</i> to the head element
+ */
+  public void jumpToHead() {
     curr = head;
   }
 
-	/**
-	 * Returns the number of elements in the list
-	 */
-	public int size() {
+/**
+ * Returns the number of elements in the list
+ */
+  public int size() {
     return size;
   }
 
