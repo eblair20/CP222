@@ -1,3 +1,5 @@
+// passes tests A B C D ... others were almost working
+
 public class SingleLinkList <T> implements IList<T> {
 
   ISLink<T> head; //first node
