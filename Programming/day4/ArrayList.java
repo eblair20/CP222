@@ -1,4 +1,4 @@
-// passes tests A B C D E G H ... others were almost working
+// passes tests A B C D E G H 
 
 import java.util.Scanner;
 
@@ -29,8 +29,8 @@ public class ArrayList<T> implements IList<T> {
     }
     new_array[idx] = v;
     array = new_array;
-    //size++;
-    //cur = idx;
+    size++;
+    cur = idx;
   }
 
    /**
