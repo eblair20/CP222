@@ -1,4 +1,4 @@
-// passes tests A B C D 
+//passes tests A B C D 
 
 public class DoubleLinkList<T> implements IList<T> {
   IDLink<T> head;
