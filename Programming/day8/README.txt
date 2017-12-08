@@ -8,3 +8,14 @@ IList.java - An interface for a list implementation (matches day4)
 IDict.java - An interface for dictionaries
 shortlist.txt - a 50000 word list
 words_alpha.txt - a 370098 word list
+
+DoubleLinkList.java - Used to add words to an array for the dictionary
+DoubleLinkPair.java - Modified DoubleLinkList that implements two generics for key and value
+DLink.java - Nodes for DoubleLinkList.java
+DLink2.java - Nodes for DoubleLinkPair.java
+IDLink.java - Interface for DLink.java
+IDLink2.java - Interface for DLink2.java
+TreeNode.java - Creates the nodes for the binary search tree with two different generics
+BSTree.java - A binary search tree
+
+
