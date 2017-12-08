@@ -12,7 +12,7 @@ public interface IList<T> {
 
 	/**
 	 * Adds an item to the end of list. Called 'Add' in class, but more usually called
-	 * append in other libraries. Moves <i>current</i> to the end of the list.
+	 * append in other libraries. Moves <i>current</i> to the end of the list
 	 * @param v Item to add
 	 */
 	public void append(T v);
