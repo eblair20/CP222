@@ -41,7 +41,7 @@ public class Test {
             }
         }
         e = System.currentTimeMillis();
-        System.out.println("Linear list dict took "+(e-s)+"ms");
+        System.out.println("Linear list dictionary took "+(e-s)+"ms");
         rand.setSeed(0);
         s = System.currentTimeMillis();
         for(int i=0; i<100000; i++) {
