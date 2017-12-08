@@ -17,5 +17,6 @@ IDLink.java - Interface for DLink.java
 IDLink2.java - Interface for DLink2.java
 TreeNode.java - Creates the nodes for the binary search tree with two different generics
 BSTree.java - A binary search tree
+Dict.java - A dicitonary backed by the list implementatino in DoubleLinkPair.java
 
 
