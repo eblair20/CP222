@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class MergeSort<T extends Comparable> implements ISort<T>{
 
   public MergeSort() {
@@ -60,12 +58,22 @@ public class MergeSort<T extends Comparable> implements ISort<T>{
 
   public static void main(String[] args) {
     ISort<Integer> n = new MergeSort<Integer>();
-    Integer[] a = {11, 7, 20, 5, 31, 26, 4};
-    System.out.println(Arrays.toString(a));
+    Integer[] array = {11, 9, 17, 5, 12, 7, 6, 20, 2};
+    System.out.println("Original array:");
 
-    n.sort(a);
+    for (int i = 0; i < array.length; i++) {
+      System.out.print(array[i] + " ");
+    }
+    System.out.println();
 
-    System.out.println(Arrays.toString(a));
+    n.sort(array);
+
+    System.out.println("Array after sort:");
+
+    for (int i = 0; i < array.length; i++) {
+      System.out.print(array[i] + " ");
+    }
+    System.out.println();
 
   }
 
