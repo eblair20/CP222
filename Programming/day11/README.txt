@@ -21,5 +21,13 @@ IGraph.java - An interface for a graph implementation
 INode.java  - An interface for nodes used by IGraph instances
 IEdge.java  - An interface for edges used by IGraph instances
 IGraphReader.java - An interface for classes that read in graphs
-DiGraphReader.java - The start of an implementation of IGraphReader
+DiGraphReader.java - Implementation of IGraphReader
 graphfile.cs2 - A sample graph file containing 3 nodes and 3 edges
+Edge.java - Implements IEdge.java interface to create an edge
+Node.java - Implements INode.java interface to create a node
+Graph.java - Implements IGraph.java interface 
+DoubleLinkList.java - Creates a doubly linked list
+DLink.java - Implements IDLink.java interface
+IDLink.java - An interface for creating links in the doubly linked list
+IList.java - Interface for the methods for DoubleLinkList.java
+
