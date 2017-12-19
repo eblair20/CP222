@@ -20,6 +20,7 @@ public class DiGraphReader implements IGraphReader {
 
     public IGraph<String,Double> read(String filename) throws FileNotFoundException, IOException {
         BufferedReader reader = new BufferedReader(new FileReader(filename));
+        //IGraph<String,Double> graph = new Graph<String,Double>();
 
         //Parse the lines. If a line does not have exactly 3 fields, ignore the line
         // For each line, add the nodes and edge
